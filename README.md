@@ -19,6 +19,7 @@ It is designed for a **Yahoo points league** and helps answer:
 - “How do add/drops change my chance to win?”
 - “Which teams offer the best schedule for streaming?”
 - “What changes if specific players are injured?”
+  
 **The add/drop strategy evaluation is essential since the league structure limits adds to 75 per season and 5 per week.**
 ---
 
