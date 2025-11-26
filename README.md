@@ -1,13 +1,16 @@
 # Fantasy Basketball Decision Support Tool
 *A full analytics + decision support system for Yahoo Fantasy Basketball*
 
+**Live Demo:** https://fantasy-basketball-decision-support-exrbxxpu2z6v3d4aahdxni.streamlit.app/
+
 This project builds a complete fantasy basketball optimization engine using:
-- **Python**
-- **Streamlit UI**
-- **Custom projection engine**
+- **Baseline fantasy point projections**
 - **Win probability modeling**
+- **Daily matchup simulation**
 - **Add/Drop streaming optimization**
-- **Yahoo Fantasy API (OAuth2)**
+- **Opponent counter-move simulation**
+- **What-if scenarios (injuries, added games)**
+The app runs locally using demo CSVs (included in this repo), so it works without needing Yahoo API credentials.
 
 It is designed for a **Yahoo points league** and helps answer:
 - “What is my projected final score this week?”
@@ -15,7 +18,8 @@ It is designed for a **Yahoo points league** and helps answer:
 - “What is my win probability vs my opponent?”
 - “How do add/drops change my chance to win?”
 - “Which teams offer the best schedule for streaming?”
-The add drop evaluation is essential since the league structure limits adds to 75 per season and 5 per week.
+- “What changes if specific players are injured?”
+**The add/drop strategy evaluation is essential since the league structure limits adds to 75 per season and 5 per week.**
 ---
 
 ## Key Features
@@ -46,13 +50,27 @@ The add drop evaluation is essential since the league structure limits adds to 7
 
 ## Project Structure
 
-├── app.py # Streamlit frontend
-├── projection_core.py # Core projection + win probability engine
-├── strategy_engine.py # Add/drop & streaming optimizer
-├── baseline_projection.py # Batch projection script
-├── src/ # Local data directory
-│ └── data/ # Sample CSVs for demo
-└── FBBK_Data_Pull_for_Github.ipynb # Clean Yahoo API notebook
+fantasy-basketball-decision-support/
+│
+├── app.py                     # Streamlit UI
+├── baseline_projection.py     # Baseline weekly projections
+├── projection_core.py         # Core modeling logic
+├── strategy_engine.py         # Add/drop optimization engine
+├── requirements.txt
+├── README.md
+│
+├── src/
+│   ├── core/                  # Utility code
+│   ├── data/                  # Demo CSVs (safe to share)
+│   │   ├── my_team.csv
+│   │   ├── opp_team.csv
+│   │   ├── current_score.csv
+│   │   ├── nba_schedule_next_7_days.csv
+│   │   └── README.md          # Notes about the demo data
+│   └── yahoo_api.py           # Empty/no secrets stored
+│
+└── FBBK_Data_Pull_for_Github.ipynb
+
 
 ---
 
@@ -83,5 +101,6 @@ Real Yahoo OAuth credentials are intentionally NOT included. If you want to pull
 - add your CLIENT_ID to oauth2.json (and CLIENT_SECRET if necessary)
 - Run: python src/data/yahoo_api.py
 (Instructions provided inside the notebook.)
+
 
 
