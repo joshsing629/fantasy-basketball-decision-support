@@ -6,10 +6,6 @@ venv/
 __pycache__/
 *.pyc
 
-# OS/editor junk
-.DS_Store
-*.log
-
 # Streamlit cache
 .streamlit/
 
@@ -17,8 +13,12 @@ __pycache__/
 oauth2.json
 *.token
 *.secret
-*.env
+.env
 
-# Local data files with real league info (optional)
-src/data/*.csv
+# Local data - DO NOT UPLOAD TO GITHUB
+src/data/*
 !src/data/README.md
+
+# OS junk files
+.DS_Store
+*.log
