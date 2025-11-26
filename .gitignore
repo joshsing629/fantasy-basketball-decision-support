@@ -9,19 +9,17 @@ __pycache__/
 # Streamlit cache
 .streamlit/
 
-# Yahoo auth / secrets
-oauth2.json
+# Yahoo auth / secrets  (KEEP THESE LOCAL ONLY)
+config/oauth2.json
 *.token
 *.secret
 .env
 
-# Local data - DO NOT UPLOAD TO GITHUB
-src/data/*
-!src/data/README.md
+# Local *private* data examples (if any)
+# (You can leave this commented if you want all CSVs tracked)
+# src/data/private_*.csv
 
 # OS junk files
 .DS_Store
 *.log
 
-# Ignore Jupyter notebooks
-*.ipynb
