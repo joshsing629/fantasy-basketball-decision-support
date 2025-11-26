@@ -56,16 +56,6 @@ The add drop evaluation is essential since the league structure limits adds to 7
 
 ---
 
-## Sample Data
-
-Includes sample CSVs here so the app runs as a demo:
-- `my_team.csv`  
-- `opp_team.csv`  
-- `nba_schedule_next_7_days.csv`  
-- `current_score.csv`
-
----
-
 ## Running Locally
 
 ```bash
@@ -75,5 +65,23 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 streamlit run app.py
+
+---
+
+## Sample Data for Demo Included
+
+Includes sample CSVs here so the app runs as a demo:
+- `my_team.csv`  
+- `opp_team.csv`  
+- `nba_schedule_next_7_days.csv`  
+- `current_score.csv`
+
+## Yahoo API Credentials
+
+Real Yahoo OAuth credentials are intentionally NOT included. If you want to pull real data:
+- create a Yahoo developer app
+- add your CLIENT_ID to oauth2.json (and CLIENT_SECRET if necessary)
+- Run: python src/data/yahoo_api.py
+(Instructions provided inside the notebook.)
 
 
