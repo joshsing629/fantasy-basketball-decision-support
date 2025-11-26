@@ -1,4 +1,4 @@
-# Fantasy Basketball Decision Support Tool 🏀📊  
+# Fantasy Basketball Decision Support Tool
 *A full analytics + decision support system for Yahoo Fantasy Basketball*
 
 This project builds a complete fantasy basketball optimization engine using:
