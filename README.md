@@ -51,33 +51,19 @@ It is designed for a **Yahoo points league** and helps answer:
 
 ## Project Structure
 
-fantasy-basketball-decision-support/
-│
-├── app.py                         # Streamlit UI
-├── baseline_projection.py         # Baseline weekly projections
-├── projection_core.py             # Core modeling logic
-├── strategy_engine.py             # Add/drop optimization engine
-├── requirements.txt
-├── README.md
-├── FBBK_Data_Pull_for_Github.ipynb
-│
-├── src/
-│   ├── core/                      # Utility modules
-│   │   ├── config.py
-│   │   ├── constants.py
-│   │   └── __init__.py
-│   │
-│   ├── data/                      # Demo CSVs (safe for GitHub)
-│   │   ├── my_team.csv
-│   │   ├── opp_team.csv
-│   │   ├── current_score.csv
-│   │   ├── nba_schedule_next_7_days.csv
-│   │   └── README.md              # Info about demo data
-│   │
-│   └── yahoo_api.py               # Empty placeholder (no secrets)
-│
-└── .gitignore
-
+| File / Folder                     | Description                                        |
+| --------------------------------- | -------------------------------------------------- |
+| `app.py`                          | Streamlit UI application                           |
+| `baseline_projection.py`          | Baseline weekly projection logic                   |
+| `projection_core.py`              | Core modeling utilities & math                     |
+| `strategy_engine.py`              | Streaming/add-drop optimization engine             |
+| `requirements.txt`                | Dependency list                                    |
+| `README.md`                       | Project documentation                              |
+| `FBBK_Data_Pull_for_Github.ipynb` | Example notebook (safe)                            |
+| `src/core/`                       | Low-level utilities, config, helpers               |
+| `src/data/`                       | Demo CSV inputs (safe to publish)                  |
+| `src/yahoo_api.py`                | Placeholder for Yahoo API integration (no secrets) |
+| `.gitignore`                      | Exclusions for virtualenv, secrets, cache, etc.    |
 
 ---
 
