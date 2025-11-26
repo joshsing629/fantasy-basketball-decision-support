@@ -22,3 +22,6 @@ src/data/*
 # OS junk files
 .DS_Store
 *.log
+
+# Ignore Jupyter notebooks
+*.ipynb
