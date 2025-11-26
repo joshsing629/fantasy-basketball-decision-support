@@ -1,5 +1,5 @@
 # Fantasy Basketball Decision Support Tool
-*A full analytics + decision support system for Yahoo Fantasy Basketball*
+*A full analytics + decision support system for Yahoo Fantasy Basketball points leagues*
 
 **Live Demo:** https://fantasy-basketball-decision-support-exrbxxpu2z6v3d4aahdxni.streamlit.app/
 
