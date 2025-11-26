@@ -1,0 +1,18 @@
+player_id,name,pos,nba_team,avg_fp,team_abbr
+5826,Donovan Mitchell,PG,Cleveland Cavaliers,43.87647058823529,CLE
+6616,Jordan Goodwin,PG,Phoenix Suns,18.766666666666666,PHX
+6165,RJ Barrett,SG,Toronto Raptors,30.076470588235292,TOR
+6499,Naji Marshall,SF,Dallas Mavericks,21.968421052631577,DAL
+5858,Dillon Brooks,SF,Phoenix Suns,30.175,PHX
+6420,Jaden McDaniels,SF,Minnesota Timberwolves,28.83125,MIN
+5197,Rudy Gobert,C,Minnesota Timberwolves,29.164705882352937,MIN
+4897,Nikola Vučević,C,Chicago Bulls,33.81875,CHI
+5658,Pascal Siakam,SF,Indiana Pacers,39.79375,IND
+6408,Isaiah Stewart,PF,Detroit Pistons,24.557142857142857,DET
+6166,De'Andre Hunter,SF,Cleveland Cavaliers,27.3,CLE
+6022,Shai Gilgeous-Alexander,PG,Oklahoma City Thunder,49.68888888888889,OKC
+6692,Chet Holmgren,PF,Oklahoma City Thunder,33.05714285714286,OKC
+6035,Anfernee Simons,PG,Boston Celtics,21.0,BOS
+10104,Brandon Miller,SF,Charlotte Hornets,22.600000000000005,CHA
+5464,Kristaps Porziņģis,PF,Atlanta Hawks,33.93636363636363,ATL
+6216,Jordan Poole,PG,New Orleans Pelicans,22.67142857142857,NO
